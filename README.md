@@ -1,48 +1,54 @@
-# Astro Starter Kit: Basics
+# Sri-chat-ui
 
-```sh
-npm create astro@latest -- --template basics
-```
+## Purpose
 
-[![Open in StackBlitz](https://developer.stackblitz.com/img/open_in_stackblitz.svg)](https://stackblitz.com/github/withastro/astro/tree/latest/examples/basics)
-[![Open with CodeSandbox](https://assets.codesandbox.io/github/button-edit-lime.svg)](https://codesandbox.io/p/sandbox/github/withastro/astro/tree/latest/examples/basics)
-[![Open in GitHub Codespaces](https://github.com/codespaces/badge.svg)](https://codespaces.new/withastro/astro?devcontainer_path=.devcontainer/basics/devcontainer.json)
+This repository contains the user interface for the **Sri-chat-api** project. It serves as the frontend of the system, enabling users to make queries about taxes in Ecuador through a clean and intuitive interface. The primary goal of this project is to simplify tax-related interactions for the general public by providing an easy-to-use web application.
 
-> 🧑‍🚀 **Seasoned astronaut?** Delete this file. Have fun!
+## Features
 
-![just-the-basics](https://github.com/withastro/astro/assets/2244813/a0a5533c-a856-4198-8470-2d67b1d7c554)
+- User-friendly interface to interact with the chat assistant.
+- Responsive design for seamless usage on desktops and mobile devices.
 
-## 🚀 Project Structure
+## Usage
 
-Inside of your Astro project, you'll see the following folders and files:
+1. **Install Dependencies**:
+   This project uses `npm` for dependency management. To install the required dependencies, run the following command:
 
-```text
-/
-├── public/
-│   └── favicon.svg
-├── src/
-│   ├── layouts/
-│   │   └── Layout.astro
-│   └── pages/
-│       └── index.astro
-└── package.json
-```
+   ```bash
+   npm install
+   ```
 
-To learn more about the folder structure of an Astro project, refer to [our guide on project structure](https://docs.astro.build/en/basics/project-structure/).
+2. **Environment Variables**:
 
-## 🧞 Commands
+   - Use the `.env.example` file as a reference for the required environment variables.
+   - Copy the `.env.example` file and rename it to `.env`. Then update the variables with your configuration.
 
-All commands are run from the root of the project, from a terminal:
+3. **Start the Development Server**:
 
-| Command                   | Action                                           |
-| :------------------------ | :----------------------------------------------- |
-| `npm install`             | Installs dependencies                            |
-| `npm run dev`             | Starts local dev server at `localhost:4321`      |
-| `npm run build`           | Build your production site to `./dist/`          |
-| `npm run preview`         | Preview your build locally, before deploying     |
-| `npm run astro ...`       | Run CLI commands like `astro add`, `astro check` |
-| `npm run astro -- --help` | Get help using the Astro CLI                     |
+   - To run the project locally, execute:
+     ```bash
+     npm run dev
+     ```
+   - This will start a local development server, usually available at `http://localhost:4321/`.
 
-## 👀 Want to learn more?
+4. **Build for Production**:
+   - To build the project for production, use:
+     ```bash
+     npm run build
+     ```
+   - The output will be located in the `dist` directory.
 
-Feel free to check [our documentation](https://docs.astro.build) or jump into our [Discord server](https://astro.build/chat).
+## Technologies
+
+This project uses the following technologies:
+
+- **Astro**: Framework for building fast and modern web applications.
+- **Tailwind CSS**: Utility-first CSS framework for styling.
+
+## Contribution
+
+Contributions are welcome! While there are no specific contribution guidelines at the moment, feel free to fork the repository, create a branch, and submit a pull request with your changes.
+
+## License
+
+This project is licensed under the **MIT License**. See the `LICENSE` file for more details.
