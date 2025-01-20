@@ -29,5 +29,11 @@ import Layout from "../layouts/Layout.astro";
       </div>
     </form>
   </main>
-  <script src="/src/client/index.js" type="module"></script>
+
+  <script is:inline type="module">
+    import { handleSendMessage } from "../client/sendMessage";
+
+    const form = document.getElementById("input-form");
+    form?.addEventListener("submit", handleSendMessage);
+  </script>
 </Layout>
