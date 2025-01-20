@@ -1,4 +1,4 @@
-export const userMessageTemplate = (message: string) => `
+export const userMessageTemplate = (message) => `
 <div class="flex flex-col gap-1 w-full max-w-[320px] justify-self-end">
   <div class="flex items-center space-x-2 rtl:space-x-reverse">
     <span class="text-sm font-semibold text-gray-900 dark:text-white">Usuario</span>
@@ -8,7 +8,7 @@ export const userMessageTemplate = (message: string) => `
   </div>
 </div>`;
 
-export const createAssistantMessageTemplate = (parent: HTMLElement) => {
+export const createAssistantMessageTemplate = (parent) => {
   const div = document.createElement("div");
   div.innerHTML = `
     <div class="flex flex-col gap-1 w-full max-w-[320px]">
@@ -37,7 +37,7 @@ export const createAssistantMessageTemplate = (parent: HTMLElement) => {
   }
 
   // Retornar una función para agregar chunks al mensaje
-  return (chunk: string) => {
+  return (chunk) => {
     messageElement.textContent += chunk;
   };
 };
