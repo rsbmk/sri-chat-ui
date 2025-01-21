@@ -1,5 +1,5 @@
-import { send } from "./service.ts";
-import { createAssistantMessageTemplate, userMessageTemplate } from "./utils.ts";
+import { send } from "./service.js";
+import { createAssistantMessageTemplate, userMessageTemplate } from "./utils.js";
 const SCROLL_HEIGHT = 1000;
 
 const input = document.getElementById("input");

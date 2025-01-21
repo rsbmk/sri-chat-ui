@@ -1,4 +1,4 @@
-import { getUserId } from "./utils";
+import { getUserId } from "./utils.js";
 
 const BASE_URL = import.meta.env.PUBLIC_API_URL;
 
