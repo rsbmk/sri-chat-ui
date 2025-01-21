@@ -1,6 +1,6 @@
 import { getUserId } from "./utils.js";
 
-const BASE_URL = import.meta.env.PUBLIC_API_URL;
+const BASE_URL = "https://sri-chat-api.onrender.com/api/v1";
 
 /**
  * Sends a chat message to the server.
