@@ -6,7 +6,7 @@ export const userMessageTemplate = (message) => {
          <span class="text-sm font-semibold text-white">Usuario</span>
          <span class="text-sm font-normal text-gray-400">${currentTime}</span>
       </div>
-      <div class="flex flex-col leading-1.5 p-4 border-gray-200 rounded-buble-r bg-gray-700">
+      <div class="flex flex-col leading-1.5 p-4 border-gray-200 max-w-[22rem] rounded-buble-r bg-gray-700">
          <p class="text-sm font-normal text-white">${message}</p>
       </div>
    </div>`;
@@ -21,7 +21,7 @@ export const createAssistantMessageTemplate = (parent) => {
       <span class="text-sm font-semibold text-white">Asistente</span>
       <span class="text-sm font-normal text-gray-400">${currentTime}</span>
    </div>
-   <div class="flex flex-col leading-1.5 p-4 border-gray-200 rounded-buble-l bg-gray-700">
+   <div class="flex flex-col leading-1.5 p-4 border-gray-200 max-w-[22rem] rounded-buble-l bg-gray-700">
       <p id="assistant-message" class="text-sm font-normal text-white">
          <svg id="loader" class="animate-spin h-5 w-5 text-white" xmlns="http://www.w3.org/2000/svg" fill="none"
             viewBox="0 0 24 24">
