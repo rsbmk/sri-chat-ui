@@ -4,13 +4,13 @@ import Layout from "../layouts/Layout.astro";
 
 <Layout title="Servicio de Rentas Internas (SRI) - Chat Assitant">
   <main
-    class="container mx-auto py-6 px-4 min-h-screen max-w-sm sm:max-w-screen-sm grid grid-rows-[6rem_auto_3rem] sm:grid-rows-[4rem_auto_3rem] gap-2 sm:gap-4"
+    class="container mx-auto py-6 px-4 min-h-[calc(100vh-5rem)] max-w-sm sm:max-w-screen-sm grid grid-rows-[6rem_auto_3rem] sm:grid-rows-[4rem_auto_3rem] gap-2 sm:gap-4"
   >
     <div>
       <h1 class="text-3xl font-bold text-gray-100 text-center grid place-content-center">Asistente Servicio de Rentas Internas</h1>
       <h3 class="text-xs text-gray-400 text-center italic">Consulta todo lo que quieras saber sobre el SRI</h3>
     </div>
-    <div id="chat" class="w-full scroll-smooth gap-8 overflow-hidden space-y-4 max-h-[calc(100vh-12rem)] overflow-y-scroll h-full"></div>
+    <div id="chat" class="w-full scroll-smooth gap-8 overflow-hidden space-y-4 overflow-y-scroll h-full max-h-[calc(100vh-12rem)]"></div>
     <form id="input-form" class="flex">
       <input
         type="text"
